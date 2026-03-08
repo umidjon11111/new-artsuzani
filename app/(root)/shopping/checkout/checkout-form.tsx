@@ -52,8 +52,7 @@ export default function CheckoutForm({
             quantity: it.quantity,
           })),
           fullName.trim(),
-          location.trim(),
-          guestId || null
+          location.trim()
         );
         
         // Orders created successfully. Forwarding to success panel

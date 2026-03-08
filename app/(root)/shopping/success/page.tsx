@@ -30,7 +30,7 @@ export default function CheckoutSuccessPage() {
           What happens next?
         </h3>
         <p className="text-sm text-muted-foreground text-left leading-relaxed">
-          Our artisans will carefully prepare your handmade Artsuzani items piece by piece. Once shipped, you'll receive a tracking number to monitor your delivery. Expect a touch of true Bukhara heritage arriving at your doorstep very soon!
+          Our artisans will carefully prepare your handmade Artsuzani items piece by piece. Once shipped, you&apos;ll receive a tracking number to monitor your delivery. Expect a touch of true Bukhara heritage arriving at your doorstep very soon!
         </p>
       </div>
 

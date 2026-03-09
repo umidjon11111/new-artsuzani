@@ -17,6 +17,7 @@ import { SignedIn, SignedOut, SignInButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import { createUser } from "@/actions/user.actions";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const BUHARA_THEMES = [
   { id: "theme-bukhara", name: "Bukhara Luxury", colors: ["bg-[#b32230]", "bg-[#dec576]", "bg-[#f5ebd6]"] },
@@ -152,10 +153,7 @@ const Header = ({
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href={"/"} className="flex items-center space-x-2 group">
-            <span className="text-3xl transition-transform duration-300 group-hover:scale-110 drop-shadow-sm">🪡</span>
-            <h1 className="text-2xl font-serif font-bold text-foreground tracking-wide group-hover:text-primary transition-colors duration-300">
-              Artsuzani
-            </h1>
+            <Image src="/logo.png" alt="Logo" width={200} height={200} />
           </Link>
 
           {/* Nav (desktop) */}
@@ -334,7 +332,7 @@ const Header = ({
             </div>
 
             {/* Favorites */}
-            <Link href={"/favorite"}>
+            <Link href={"/favorite"} className="sm:block hidden">
               <Button
                 variant="ghost"
                 size="icon"
@@ -369,11 +367,11 @@ const Header = ({
             </SignedOut>
 
             {/* Cart */}
-            <Link href={"/shopping/cart"}>
+            <Link href={"/shopping/cart"} className="sm:block hidden">
               <Button
                 variant="ghost"
                 size="icon"
-                className="relative text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-full transition-colors"
+                className="relative  text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-full transition-colors"
               >
                 <ShoppingCart className="w-5 h-5" />
                 <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center shadow-md">

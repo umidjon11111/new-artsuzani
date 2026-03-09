@@ -39,17 +39,17 @@ export const metadata: Metadata = {
     url: "https://artsuzani.com",
     locale: "uz_UZ",
     images:
-      "https://9onczztehf.ufs.sh/f/lneKO3fyzBmDltA8PHEfyzBmDjUJPQdsrZTwG8aWF2VenuNg",
+      "https://9onczztehf.ufs.sh/f/lneKO3fyzBmDh65vxdm22nFCasfAVwB3vicE98dJYzL70xgQ",
     countryName: "Uzbekistan",
     siteName: "Artsuzani",
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/logo.png" },
+      { url: "/logo.png", type: "image/png", sizes: "96x96" },
+      { url: "/logo.png", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    apple: [{ url: "/logo.png", sizes: "180x180" }],
   },
 };
 
@@ -65,15 +65,15 @@ export default async function LocaleLayout({
         <link
           rel="icon"
           type="image/png"
-          href="/favicon-96x96.png"
+          href="/logo.png"
           sizes="96x96"
         />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/logo.png" />
+        <link rel="shortcut icon" href="/logo.png" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/logo.png"
         />
         <body className={`${montserrat.className} ${cinzel.variable} ${montserrat.variable} antialiased`} suppressHydrationWarning>
           <NextTopLoader

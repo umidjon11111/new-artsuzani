@@ -24,7 +24,6 @@ type Order = {
 };
 
 export default function OrderListClient({ orders }: { orders: Order[] }) {
-  const WHATSAPP_NUMBER = "998901234567"; // Replace with real number
 
   const buildWhatsappUrl = (order: Order) => {
     const text = `Hello Artsuzani! I would like to complete the payment for my order.
@@ -38,7 +37,7 @@ Total: $${order.total.toFixed(2)}
 Please send me the payment instructions!`;
 
     const encodedText = encodeURIComponent(text);
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`;
+    return `https://api.whatsapp.com/send/?phone=998917767714&text&type=phone_number&app_absent=0`;
   };
 
   return (

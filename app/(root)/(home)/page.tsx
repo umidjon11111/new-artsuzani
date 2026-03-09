@@ -34,7 +34,7 @@ export default async function Home() {
         </svg>
       </div>
 
-      <main className="pt-24 px-4 max-w-screen-2xl w-full mx-auto relative z-10">
+      <main className="pt-24 px-4  w-full mx-auto relative z-10">
         <section aria-labelledby="hero" className="mb-16 z-10">
           <h1 id="hero" className="sr-only">
             Explore Authentic Uzbek Suzani
@@ -47,6 +47,7 @@ export default async function Home() {
 
         {/* CATEGORIES */}
         <section
+          id="categories"
           aria-labelledby="categories-heading"
           className="mb-16 relative z-10 animate-in fade-in slide-in-from-left-8 duration-1000 delay-300"
         >

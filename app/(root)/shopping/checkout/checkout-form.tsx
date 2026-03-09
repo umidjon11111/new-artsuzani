@@ -56,7 +56,7 @@ export default function CheckoutForm({
         );
         
         // Orders created successfully. Forwarding to success panel
-        route.push("/shopping/success");
+        route.push("/orders");
       } catch (err) {
         console.error("Order creation failed.", err);
         setFormError("An error occurred while creating your order. Please try again.");

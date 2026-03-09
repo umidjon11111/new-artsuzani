@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Heart, Search, LogIn, ShoppingCart } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -11,10 +12,7 @@ export default function Footer() {
           {/* Logo and About */}
           <div className="md:col-span-1 space-y-4">
             <Link href={"/"} className="flex items-center space-x-2 group w-max">
-              <span className="text-2xl transition-transform duration-300 group-hover:scale-110">🪡</span>
-              <h2 className="text-2xl font-serif font-bold bg-gradient-primary bg-clip-text text-transparent tracking-wide">
-                Artsuzani
-              </h2>
+               <Image src="/logo.png" alt="Logo" width={200} height={200} />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mt-4">
               Discover exquisite, handmade Suzani embroidery from the heart of
